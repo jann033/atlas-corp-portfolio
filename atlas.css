@@ -99,10 +99,10 @@ h2 { font-size: clamp(39px, 5.15vw, 77px); line-height: .99; letter-spacing: -.0
 .desktop-shot span, .art-arrow { display: grid; place-items: center; width: 33px; height: 33px; position: absolute; right: 12px; bottom: 12px; font: 600 18px var(--sans); color: white; background: #1c2430; border-radius: 50%; }
 figcaption { color: #3e4656; font-size: 13px; margin-top: 8px; }
 
-.mini-grid, .web-grid { display: grid; gap: 16px; margin-top: 20px; }
-.mini-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.web-grid { grid-template-columns: 1.45fr 1fr; }
+.mini-grid { display: grid; gap: 16px; margin-top: 20px; grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .mini-card, .web-case { background: #fbfaf7; border: 1px solid var(--line); border-radius: 15px; overflow: hidden; }
+.web-case { display: grid; align-items: center; grid-template-columns: 1fr 1fr; margin-top: 20px; }
+.web-case .mini-copy { padding: clamp(19px, 4vw, 56px); }
 .mini-art, .site-art { display: block; position: relative; height: clamp(225px, 25vw, 350px); overflow: hidden; }
 .mini-art img { position: absolute; width: 66%; max-width: 217px; top: 18px; left: 50%; transform: translateX(-50%); border-radius: 14px; box-shadow: 0 11px 27px #11172550; transition: transform .25s; }
 .mini-art:hover img { transform: translate(-50%, -4px); }
@@ -114,6 +114,7 @@ figcaption { color: #3e4656; font-size: 13px; margin-top: 8px; }
 .mini-copy { padding: 19px 22px 23px; }
 .mini-copy h3 { font-size: clamp(23px, 3vw, 36px); font-weight: 800; letter-spacing: -.057em; line-height: 1.08; margin: 7px 0; }
 .mini-copy p:not(.eyebrow) { font-size: 14px; color: var(--muted); }
+.bot-link { margin-top: 14px; }
 .site-art { background: #d0e5ed; }
 .site-art > img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .art-forbro { background: #dddcd5; }
@@ -187,7 +188,7 @@ dialog > img { max-height: 84dvh; width: auto; object-fit: contain; margin-inlin
   .erp-intro { gap: 12px; margin-bottom: 16px; }
   .erp-gallery { grid-template-columns: 1fr; gap: 13px; }
   .mini-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-  .web-grid { grid-template-columns: 1fr; gap: 10px; }
+  .web-case { grid-template-columns: 1fr; }
   .mini-art { height: clamp(155px, 42vw, 260px); }
   .mini-art img { width: 67%; border-radius: 9px; }
   .art-x img { width: 72%; }
