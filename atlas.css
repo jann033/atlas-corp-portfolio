@@ -89,6 +89,7 @@ h2 { font-size: clamp(39px, 5.15vw, 77px); line-height: .99; letter-spacing: -.0
 .denta-right { top: 17%; left: 50%; transform: rotate(7deg); }
 .denta-visual .phone:hover { z-index: 1; }
 .erp-feature { border: 1px solid #d2d7e2; background: #eef1f7; border-radius: 18px; margin-top: 22px; padding: clamp(20px, 3.4vw, 50px); }
+.repair-feature { background: #eaf0e9; border-color: #d4ddd2; }
 .erp-intro { display: grid; grid-template-columns: 1fr .95fr; gap: 22px; align-items: end; margin-bottom: 25px; }
 .erp-intro h3 { font-size: clamp(35px, 4.7vw, 64px); margin-bottom: 0; }
 .muted { color: var(--muted); font-size: 13px; margin-top: 8px; }
